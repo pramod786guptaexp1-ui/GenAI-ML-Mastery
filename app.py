@@ -8,8 +8,8 @@ st.set_page_config(page_title="GenAI & ML Mastery", layout="wide")
 with st.sidebar:
     choice = option_menu(
         menu_title="GenAI & ML Mastery", # required
-        options=["Home", "About the Course", "About Us", "Contact Us"], # Updated to match your content
-        icons=['house', 'book', 'info-circle', 'telephone'], # Relevant icons
+        options=["Home", "About the Course", "About Us", "FAQs", "Contact Us"], # Updated to match your content
+        icons=['house', 'book', 'info-circle', 'question-circle', 'telephone'], # Relevant icons
         menu_icon="cast", # optional
         default_index=0, # optional
         orientation="Horizontal",
@@ -89,6 +89,48 @@ elif choice == "About Us":
     st.divider()
 
     st.image("https://images.unsplash.com/photo-1522071820081-009f0129c71c", width=600) # Image of a team/collaboration
+
+# --- FAQ SECTION ---
+elif choice == "FAQs":
+    st.title("❓ Frequently Asked Questions")
+    st.write("Everything you need to know about the GenAI & ML Mastery course.")
+
+    # FAQ 1
+    with st.expander("Do I need a technical background or coding skills?"):
+        st.write("""
+        While a basic understanding of computers is helpful, this course is designed 
+        to be accessible. We cover BI tools and Generative AI platforms that 
+        allow you to build powerful solutions without writing complex code.
+        """)
+
+    # FAQ 2
+    with st.expander("What is the duration of the live sessions?"):
+        st.write("""
+        Every Saturday and Sunday, we host a **2-hour live session**. 
+        These sessions are interactive and include both theory and practical demos.
+        """)
+
+    # FAQ 3
+    with st.expander("Will I work on real-world projects?"):
+        st.write("""
+        Absolutely. You will build projects involving Sentiment Analysis, 
+        Image/Video generation, and even a functional Chatbot using Dialogflow.
+        """)
+
+    # FAQ 4
+    with st.expander("What are the system requirements?"):
+        st.write("""
+        All you need is a laptop with a stable internet connection. 
+        Most of the tools we use (Looker Studio, Google Colab, Dialogflow) 
+        are browser-based and do not require heavy software installation.
+        """)
+
+    # FAQ 5
+    with st.expander("How do I access the assignments?"):
+        st.write("""
+        Assignments are shared via our dedicated student portal and WhatsApp group 
+        following the Saturday sessions.
+        """)
 
 # --- CONTACT US SECTION ---
 elif choice == "Contact Us":
