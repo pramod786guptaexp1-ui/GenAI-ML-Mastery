@@ -11,7 +11,7 @@ choice = st.sidebar.selectbox("Navigate", menu)
 if choice == "Home":
     st.title("🚀 Master Generative AI & Machine Learning")
     st.subheader("Empowering students to build the future with AI.")
-    st.image("https://images.unsplash.com/photo-1677442136019-21780ecad995") # Placeholder GenAI image
+    st.image("https://images.unsplash.com/photo-1677442136019-21780ecad995", width=150) # Placeholder GenAI image
     st.write("""
     Welcome to the premier destination for learning AI. 
     From Traditional Machine Learning to the latest in Agentic AI and Image Generation, 
@@ -25,32 +25,32 @@ elif choice == "About the Course":
 
     # Week 1
     with st.expander("Week 1: Data Visualization & Foundations"):
-        st.write("**Saturday:** BI Tool (Looker Studio) + One Home Assignment")
-        st.write("**Sunday:** Practical Demo (Or Case Study)")
+        st.write("**Saturday:** Deep Dive into BI Tools like Looker Studio — *Master the art of transforming raw data into high-impact, interactive dashboards.**")
+        st.write("**Sunday:** Practical Demo on BI Tools")
 
     # Week 2
     with st.expander("Week 2: AI in Consulting"):
-        st.write("**Saturday:** Generative AI For Consulting + AI Case Study")
-        st.write("**Sunday:** Management Consulting + Management Case Study")
+        st.write("**Saturday:** Generative AI For Consulting along with AI Case Study")
+        st.write("**Sunday:** Management Consulting along with Case Study")
 
     # Week 3
     with st.expander("Week 3: Deep Dive into Gen AI & Traditional ML"):
         st.markdown("""
         **Saturday:** * **Traditional AI:** Supervised/Unsupervised, ML, Clustering, Rule-Based.
-        * **AI Strategy:** Where to use (and not use) AI; Applications.
-        * **Gen AI:** What is it? Different use cases; Differences from Traditional AI.
-        * **The Market:** Google, OpenAI, etc.
+        * **AI Strategy:** Where to use (and not use) AI Applications.
+        * **Gen AI:** What is it? Different use cases and differences from Traditional AI.
+        * **The Market:** Google, OpenAI and many more
         * **Advanced Topics:** Agentic AI, LLMs, Sentiment Analysis.
         * **Assignment:** Image Generation & Projects.
         
         **Sunday:**
-        * **Demo Day:** Image Generation, Video Generation, and Audio Generation Projects.
+        * **Demo Day:** Showing you Real Gen AI Projects Built in the Industry.
         """)
 
     # Week 4
     with st.expander("Week 4: Conversational AI & Deployment"):
         st.write("**Saturday:** Introduction to Conversational Agents; How chatbots and voicebots are built; Dialogflow based chatbot and voicebot.")
-        st.write("**Sunday:** Demo + Assignment + Revision Day")
+        st.write("**Sunday:** Enjoy Conversation AI Chatbot Demo with Revision of all the learnings")
 
 # --- ABOUT US SECTION ---
 elif choice == "About Us":
