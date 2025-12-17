@@ -20,7 +20,7 @@ if choice == "Home":
     st.title("🚀 Master Generative AI & Machine Learning")    
   
     st.subheader("Welcome to our Learning Hub")
-    st.write("Welcome to the premier destination for mastering the future of technology. At our academy, we believe that Artificial Intelligence is not just a technical skill, but a fundamental shift in how the world operates. Led by industry experts Sahil Pareek and Pramod Gupta, we offer an immersive, high-impact learning experience designed to take you from the core principles of Traditional Machine Learning to the cutting edge of Agentic AI and Generative media. Over the course of four intensive weeks, we bridge the gap between complex algorithms and real-world application, ensuring you don't just understand AI—you learn how to build with it.")    
+    st.write("Welcome to the premier destination for mastering the future of technology. At our academy, we believe that Artificial Intelligence is not just a technical skill, but a fundamental shift in how the world operates. Led by industry experts Pramod Gupta (16+ years) and Sahil Pareek (8+ years), we offer an immersive, high-impact learning experience designed to take you from the core principles of Traditional Machine Learning to the cutting edge of Agentic AI and Generative media. Over the course of four intensive weeks, we bridge the gap between complex algorithms and real-world application, ensuring you don't just understand AI—you learn how to build with it.")    
         
     st.subheader("Our Mission")
     st.write("Our mission is to democratize high-end AI education by providing a structured, 4-week roadmap that simplifies the transition from 'Traditional' to 'Generative.' Under the mentorship of Sahil and Pramod, we aim to equip students, consultants, and tech enthusiasts with the practical tools—ranging from Looker Studio for data storytelling to Dialogflow for conversational agents—necessary to thrive in an AI-driven economy. We are committed to turning theoretical concepts into tangible career assets through 2-hour live sessions and hands-on case studies.")
@@ -76,11 +76,13 @@ elif choice == "About Us":
     
     col1, col2 = st.columns(2)
     with col1:
-        st.subheader("Sahil Pareek")
-        st.write("Expert in AI Strategy and Management Consulting.")
-    with col2:
         st.subheader("Pramod Gupta")
         st.write("Specialist in Generative AI and Technical Architecture.")
+        st.write("16+ years experience in AI/ML, Data Science, Analytics and Reporting")   
+    with col2:
+        st.subheader("Sahil Pareek")
+        st.write("Expert in AI Strategy and Management Consulting.")
+        
 
     st.divider()
 
