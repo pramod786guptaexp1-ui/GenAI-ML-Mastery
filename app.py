@@ -74,13 +74,14 @@ elif choice == "About the Course":
 
 # --- ABOUT US SECTION ---
 elif choice == "About Us":
-    st.title("👥 About Us")
-    st.write("""
-    We are a team of AI practitioners and educators dedicated to making complex 
-    technologies accessible. Our mission is to bridge the gap between theoretical 
-    AI concepts and real-world management consulting applications.
+    st.title("👥 Who We Are")
+    st.markdown("""
+    ### Our Mission
+    We are a collective of seasoned **AI practitioners and passionate educators** committed to demystifying the most complex technological frontiers. 
+    
+    Our core mission is to **bridge the gap** between abstract, theoretical AI frameworks and their practical, high-stakes applications in management consulting. We believe that true mastery of Machine Learning and Generative AI isn't just about understanding the code; it’s about knowing how to leverage these tools to drive strategic value and solve intricate business problems.
     """)
-    st.image("https://cdn-icons-png.flaticon.com/512/3208/3208945.png", width=150)
+    st.image("https://images.unsplash.com/photo-1522071820081-009f0129c71c") # Image of a team/collaboration
 
 # --- CONTACT US SECTION ---
 elif choice == "Contact Us":
