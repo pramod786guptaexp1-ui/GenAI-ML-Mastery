@@ -19,15 +19,6 @@ with st.sidebar:
 if choice == "Home":
     st.title("🚀 Master Generative AI & Machine Learning")    
   
-    col1, col2 = st.columns(2)
-    with col1:
-        st.subheader("Sahil Pareek")
-        st.write("Expert in AI Strategy and Management Consulting.")
-    with col2:
-        st.subheader("Pramod Gupta")
-        st.write("Specialist in Generative AI and Technical Architecture.")
-
-    st.divider()
     st.subheader("Welcome to our Learning Hub")
     st.write("Welcome to the premier destination for mastering the future of technology. At our academy, we believe that Artificial Intelligence is not just a technical skill, but a fundamental shift in how the world operates. Led by industry experts Sahil Pareek and Pramod Gupta, we offer an immersive, high-impact learning experience designed to take you from the core principles of Traditional Machine Learning to the cutting edge of Agentic AI and Generative media. Over the course of four intensive weeks, we bridge the gap between complex algorithms and real-world application, ensuring you don't just understand AI—you learn how to build with it.")    
         
@@ -76,11 +67,23 @@ elif choice == "About the Course":
 elif choice == "About Us":
     st.title("👥 Who We Are")
     st.markdown("""
-    ### Our Mission
     We are a collective of seasoned **AI practitioners and passionate educators** committed to demystifying the most complex technological frontiers. 
     
     Our core mission is to **bridge the gap** between abstract, theoretical AI frameworks and their practical, high-stakes applications in management consulting. We believe that true mastery of Machine Learning and Generative AI isn't just about understanding the code; it’s about knowing how to leverage these tools to drive strategic value and solve intricate business problems.
     """)
+
+    st.title("👥 Our Trainers")
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        st.subheader("Sahil Pareek")
+        st.write("Expert in AI Strategy and Management Consulting.")
+    with col2:
+        st.subheader("Pramod Gupta")
+        st.write("Specialist in Generative AI and Technical Architecture.")
+
+    st.divider()
+
     st.image("https://images.unsplash.com/photo-1522071820081-009f0129c71c", width=600) # Image of a team/collaboration
 
 # --- CONTACT US SECTION ---
