@@ -78,10 +78,11 @@ elif choice == "About Us":
     with col1:
         st.subheader("Pramod Gupta")
         st.write("Specialist in Generative AI and Technical Architecture.")
-        st.write("16+ years experience in AI/ML, Data Science, Analytics and Reporting")   
+        st.write("16+ years experience in AI/ML, Data Science and Worked for Google, JP Morgan Chase, Tata Consultancy Services, Aeries Technology, Edelweiss Tokio")   
     with col2:
         st.subheader("Sahil Pareek")
         st.write("Expert in AI Strategy and Management Consulting.")
+        st.write("8+ years experience in Management and Consulting") 
         
 
     st.divider()
