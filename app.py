@@ -72,7 +72,7 @@ elif choice == "About Us":
     Our core mission is to **bridge the gap** between abstract, theoretical AI frameworks and their practical, high-stakes applications in management consulting. We believe that true mastery of Machine Learning and Generative AI isn't just about understanding the code; it’s about knowing how to leverage these tools to drive strategic value and solve intricate business problems.
     """)
 
-    st.title("👥 Our Trainers")
+    st.title("Our Trainers")
     
     col1, col2 = st.columns(2)
     with col1:
