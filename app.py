@@ -17,14 +17,26 @@ with st.sidebar:
 
 # --- HOME SECTION ---
 if choice == "Home":
-    st.title("🚀 Master Generative AI & Machine Learning")
-    st.subheader("Empowering students to build the future with AI.")
+    st.title("🚀 Master Generative AI & Machine Learning")    
+  
+    col1, col2 = st.columns(2)
+    with col1:
+        st.subheader("Sahil Pareek")
+        st.write("Expert in AI Strategy and Management Consulting.")
+    with col2:
+        st.subheader("Pramod Gupta")
+        st.write("Specialist in Generative AI and Technical Architecture.")
+
+    st.divider()
+    st.subheader("Welcome to our Learning Hub")
+    st.write("Welcome to the premier destination for mastering the future of technology. At our academy, we believe that Artificial Intelligence is not just a technical skill, but a fundamental shift in how the world operates. Led by industry experts Sahil Pareek and Pramod Gupta, we offer an immersive, high-impact learning experience designed to take you from the core principles of Traditional Machine Learning to the cutting edge of Agentic AI and Generative media. Over the course of four intensive weeks, we bridge the gap between complex algorithms and real-world application, ensuring you don't just understand AI—you learn how to build with it.")    
+        
+    st.subheader("Our Mission")
+    st.write("Our mission is to democratize high-end AI education by providing a structured, 4-week roadmap that simplifies the transition from 'Traditional' to 'Generative.' Under the mentorship of Sahil and Pramod, we aim to equip students, consultants, and tech enthusiasts with the practical tools—ranging from Looker Studio for data storytelling to Dialogflow for conversational agents—necessary to thrive in an AI-driven economy. We are committed to turning theoretical concepts into tangible career assets through 2-hour live sessions and hands-on case studies.")
+    
+    st.subheader("Our Vision")
+    st.write("We envision a future where every student has the agency to harness Artificial Intelligence to solve global challenges. By blending the strategic expertise of management consulting with the technical prowess of LLMs and Image/Video Generation, we strive to create a community of innovators who are prepared for the 'Agentic' era of AI. Our goal is to be the global benchmark for practical AI training, fostering a new generation of leaders who lead with intelligence, creativity, and technical excellence.")
     st.image("https://images.unsplash.com/photo-1677442136019-21780ecad995", width=600) 
-    st.write("""
-    Welcome to the premier destination for learning AI. 
-    From Traditional Machine Learning to the latest in Agentic AI and Image Generation, 
-    we provide a comprehensive 4-week journey into the world of Intelligence.
-    """)
 
 # --- ABOUT THE COURSE SECTION ---
 elif choice == "About the Course":
