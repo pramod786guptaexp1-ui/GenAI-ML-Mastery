@@ -7,12 +7,12 @@ st.set_page_config(page_title="GenAI & ML Mastery", layout="wide")
 # --- NAVIGATION MENU ---
 with st.sidebar:
     choice = option_menu(
-        menu_title="Main Menu", # required
+        menu_title="GenAI & ML Mastery", # required
         options=["Home", "About the Course", "About Us", "Contact Us"], # Updated to match your content
         icons=['house', 'book', 'info-circle', 'telephone'], # Relevant icons
         menu_icon="cast", # optional
         default_index=0, # optional
-        orientation="vertical",
+        orientation="Horizontal",
     )
 
 # --- HOME SECTION ---
