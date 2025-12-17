@@ -36,7 +36,7 @@ if choice == "Home":
     st.image("https://images.unsplash.com/photo-1677442136019-21780ecad995", width=600) 
 
 # --- WHY JOIN? SECTION ---
-elif selected == "Why Join?":
+elif choice == "Why Join?":
     st.title("🎯 Why should you take this course?")
     
     col1, col2 = st.columns(2)
