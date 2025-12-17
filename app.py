@@ -68,6 +68,6 @@ elif choice == "Contact Us":
     st.write("Please fill out the form below to enroll or ask a question.")
     
     # Replace the link below with your actual Google Form URL
-    google_form_url = "https://docs.google.com/forms/d/1VzhhDGejnuYf0vlSholkHh_H5gw8e_7DGu4lW1Kwkiw/preview"
+    google_form_url = "https://forms.gle/8AKAQcA2wxGtNVyc7"
     
     st.markdown(f'<iframe src="{google_form_url}" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>', unsafe_allow_html=True)
