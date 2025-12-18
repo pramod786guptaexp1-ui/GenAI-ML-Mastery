@@ -12,11 +12,17 @@ with st.sidebar:
         icons=['house', "star", 'book', 'info-circle', 'question-circle', 'telephone'], 
         menu_icon="cast", 
         default_index=0, 
-        orientation="vertical", # Note: 'Horizontal' usually doesn't fit well in sidebar
+        orientation="vertical", 
         styles={
             "container": {
-                "padding": "0!important", 
-                "background-color": "#333333"  # Dark grey background
+                "padding": "5px!important", 
+                "background-color": "#333333"
+            },
+            "menu-title": {  # This section ensures the title is visible
+                "color": "white", 
+                "font-weight": "bold", 
+                "font-size": "20px",
+                "padding": "10px"
             },
             "icon": {
                 "color": "orange", 
@@ -26,11 +32,11 @@ with st.sidebar:
                 "font-size": "16px", 
                 "text-align": "left", 
                 "margin": "0px", 
-                "color": "white",              # Added white text for contrast
-                "--hover-color": "#444444"     # Slightly lighter grey for hover
+                "color": "white", 
+                "--hover-color": "#444444"
             },
             "nav-link-selected": {
-                "background-color": "#02ab21"  # Keeps the green selection
+                "background-color": "#02ab21"
             },
         }
     )
