@@ -7,18 +7,32 @@ st.set_page_config(page_title="GenAI & ML Mastery", layout="wide")
 # --- NAVIGATION MENU ---
 with st.sidebar:
     choice = option_menu(
-        menu_title="GenAI & ML Mastery", # required
-        options=["Home", "Why Join?", "About the Course", "About Us", "FAQs", "Contact Us"], # Updated to match your content
-        icons=['house', "star", 'book', 'info-circle', 'question-circle', 'telephone'], # Relevant icons
-        menu_icon="cast", # optional
-        default_index=0, # optional
-        orientation="Horizontal",
+        menu_title="GenAI & ML Mastery", 
+        options=["Home", "Why Join?", "About the Course", "About Us", "FAQs", "Contact Us"], 
+        icons=['house', "star", 'book', 'info-circle', 'question-circle', 'telephone'], 
+        menu_icon="cast", 
+        default_index=0, 
+        orientation="vertical", # Note: 'Horizontal' usually doesn't fit well in sidebar
         styles={
-        "container": {"padding": "0!important", "background-color": "#fafafa"},
-        "icon": {"color": "orange", "font-size": "18px"}, 
-        "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-        "nav-link-selected": {"background-color": "#02ab21"},
-    }
+            "container": {
+                "padding": "0!important", 
+                "background-color": "#333333"  # Dark grey background
+            },
+            "icon": {
+                "color": "orange", 
+                "font-size": "18px"
+            }, 
+            "nav-link": {
+                "font-size": "16px", 
+                "text-align": "left", 
+                "margin": "0px", 
+                "color": "white",              # Added white text for contrast
+                "--hover-color": "#444444"     # Slightly lighter grey for hover
+            },
+            "nav-link-selected": {
+                "background-color": "#02ab21"  # Keeps the green selection
+            },
+        }
     )
 
 # --- HOME SECTION ---
