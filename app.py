@@ -63,7 +63,7 @@ with st.sidebar:
 
 # --- HOME SECTION ---
 if choice == "Home":
-    st.title("🚀 Master Generative AI & Machine Learning")    
+    st.title("🤖 Master Generative AI & Machine Learning")    
   
     st.subheader("Welcome to our Learning Hub")
     st.write("Welcome to the premier destination for mastering the future of technology. At our academy, we believe that Artificial Intelligence is not just a technical skill, but a fundamental shift in how the world operates. Led by industry experts Pramod Gupta (16+ years) and Sahil Pareek (8+ years), we offer an immersive, high-impact learning experience designed to take you from the core principles of Traditional Machine Learning to the cutting edge of Agentic AI and Generative media. Over the course of four intensive weeks, we bridge the gap between complex algorithms and real-world application, ensuring you don't just understand AI—you learn how to build with it.")    
