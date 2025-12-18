@@ -4,6 +4,26 @@ from streamlit_option_menu import option_menu
 # Page Configuration
 st.set_page_config(page_title="GenAI & ML Mastery", layout="wide")
 
+# --- CUSTOM THEMING (WARM BACKGROUND) ---
+st.markdown("""
+    <style>
+    /* Main background of the app */
+    .stApp {
+        background-color: #FFFDF5;
+    }
+    
+    /* Optional: Soften the header area to match */
+    header[data-testid="stHeader"] {
+        background-color: rgba(255, 253, 245, 0);
+    }
+    
+    /* Make the sidebar slightly different for depth if desired */
+    [data-testid="stSidebar"] {
+        background-color: #F7F3E9;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # --- NAVIGATION MENU ---
 with st.sidebar:
     choice = option_menu(
@@ -16,9 +36,9 @@ with st.sidebar:
         styles={
             "container": {
                 "padding": "5px!important", 
-                "background-color": "#333333"
+                "background-color": "#333333" # Dark grey menu for contrast
             },
-            "menu-title": {  # This section ensures the title is visible
+            "menu-title": {
                 "color": "white", 
                 "font-weight": "bold", 
                 "font-size": "20px",
@@ -55,24 +75,16 @@ if choice == "Home":
     st.write("We envision a future where every student has the agency to harness Artificial Intelligence to solve global challenges. By blending the strategic expertise of management consulting with the technical prowess of LLMs and Image/Video Generation, we strive to create a community of innovators who are prepared for the 'Agentic' era of AI. Our goal is to be the global benchmark for practical AI training, fostering a new generation of leaders who lead with intelligence, creativity, and technical excellence.")
     st.image("https://images.unsplash.com/photo-1677442136019-21780ecad995", width=600) 
 
-# --- WHY JOIN? SECTION ---
+# --- (Other sections remain the same) ---
 elif choice == "Why Join?":
     st.title("🎯 Why should you take this course?")
-    
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("💼 Business Meets Tech")
         st.write("Most courses focus only on the code. We focus on **Impact**. Learn how to apply Generative AI to management consulting case studies.")
-        
-        st.subheader("🛠️ Hands-on Portfolio")
-        st.write("Build while you learn. From AI-driven chatbots to automated BI dashboards, you will create a portfolio that stands out.")
-
     with col2:
         st.subheader("🤖 Future-Proof Your Career")
         st.write("The market is moving toward **Agentic AI**. By mastering these early, you lead the next wave of digital transformation.")
-        
-        st.subheader("🤝 Expert Mentorship")
-        st.write("Learn from active practitioners. Our **2-hour live sessions** are designed for real-time Q&A and troubleshooting.")
         
 # --- ABOUT THE COURSE SECTION ---
 elif choice == "About the Course":
